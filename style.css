@@ -1,0 +1,136 @@
+body{
+    background:rgba(0,0,0,0,0.9);
+    margin:0;
+    color:#000;
+    font-family:'segoe UI' ,sans-serif;
+    
+}
+.showcase::after{
+    content:'';
+    height:100vh;
+    width:100%;
+    background-image:url('https://pixels.com/assets/images/rooms/masterBedroom001.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    display:block;
+    filter:blur(6px);
+    -webkit-filter:blur(6px);
+    transition:all .4s ease-in-out;
+    
+}
+.showcase:hover::after{
+    filter:blur(0px);
+     -webkit-filter:blur(0px);
+    
+}
+.showcase:hover .content{
+    filter:blur(2px);
+     -webkit-filter:blur(2px);
+}
+.content{
+    position:absolute;
+    z-index:1;
+    top:10%;
+    left:40%;
+    margin-top:200px;
+    margin-left:-140;
+    width:300px;
+    height:350px;
+    text-align:center;
+    transition:all 1s;
+    
+}
+
+.content .logo{
+    height:180px;
+    width:180px;
+}
+.content .title{
+    
+    margin-top:1rem;
+}
+
+.content .text{
+
+    margin:1rem;
+    
+}
+.container{
+    max-width:960px;
+    margin:auto;
+    overflow:hidden;
+    padding:4rem 1rem;
+}
+.grid-3{
+    display:grid;
+    grid-gap:20px;
+    grid-template-columns:1fr 1fr 1fr;
+    
+    
+}
+.grid-2{
+    display:grid;
+    grid-gap:20px;
+    grid-template-columns:repeat(2, 1fr) ;
+    
+}
+.hi{
+    width:200px;
+    height:200px;
+    margin-top:30px;
+}
+.center{
+    text-align:center;
+    margin:auto;
+}
+.bg-dark{
+    background:#f4f4f4;
+    color:#333;
+}
+.bg-light{
+     background:#333;
+    color:#f4f4f4;
+}
+footer{
+    padding:2.2rem;
+    
+    font-weight:bold;
+}
+footer p{
+    margin:0;
+}
+/*small screens*/
+@media(max-width:560px{}
+.showcase::agter
+    height:50vh;
+    
+}
+.content{
+    top:5%;
+    margin-top:5px;
+}
+.content .logo{
+    height:140px;
+    width:140px;
+}
+.content .text{
+    display:none;
+}
+.grid-3, .grid-2{ 
+    grid-template-columns:1fr;
+}
+.services div{
+    border-bottom:#333 dashed  1px;
+    padding:1.2rem 1rem;
+}
+}
+/*landscape*/
+@media(max-height:500){
+    .content .title, .content .text{
+        display:none;
+    }
+    .content{
+        top:0;
+    }
+}
